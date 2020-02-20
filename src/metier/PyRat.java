@@ -4,8 +4,12 @@ import java.util.*;
 
 public class PyRat {
 
+    private Set<Point> currentFromages;
+
     /* Méthode appelée une seule fois permettant d'effectuer des traitements "lourds" afin d'augmenter la performace de la méthode turn. */
     public void preprocessing(Map<Point, List<Point>> laby, int labyWidth, int labyHeight, Point position, List<Point> fromages) {
+        currentFromages = new HashSet<>(fromages);
+        System.out.println(laby);
     }
 
     /* Méthode de test appelant les différentes fonctionnalités à développer.
@@ -14,25 +18,26 @@ public class PyRat {
         @param position - Point contenant la position actuelle du joueur
         @param fromages - List<Point> contenant la liste de tous les Points contenant un fromage. */
     public void turn(Map<Point, List<Point>> laby, int labyWidth, int labyHeight, Point position, List<Point> fromages) {
-        Point pt1 = new Point(2,1);
-        Point pt2 = new Point(3,1);
-        System.out.println((fromageIci(pt1) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt1);
-        System.out.println((fromageIci_EnOrdreConstant(pt2) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt2);
+        Point pt1 = new Point(2, 1);
+        Point pt2 = new Point(3, 1);
+        Point pt3 = new Point(0, 6);
+//        System.out.println((fromageIci(pt1, fromages) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt1);
+//        System.out.println((fromageIci_EnOrdreConstant(pt2) ? "Il y a un" : "Il n'y a pas de") + " fromage ici, en position " + pt2);
         System.out.println((passagePossible(pt1, pt2) ? "Il y a un" : "Il n'y a pas de") + " passage de " + pt1 + " vers " + pt2);
-        System.out.println((passagePossible_EnOrdreConstant(pt1, pt2) ? "Il y a un" : "Il n'y a pas de") + " passage de " + pt1 + " vers " + pt2);
-        System.out.println("Liste des points inatteignables depuis la position " + position + " : " + pointsInatteignables(position));
+//        System.out.println((passagePossible_EnOrdreConstant(pt1, pt2) ? "Il y a un" : "Il n'y a pas de") + " passage de " + pt1 + " vers " + pt2);
+//        System.out.println("Liste des points inatteignables depuis la position " + position + " : " + pointsInatteignables(position));
     }
 
     /* Regarde dans la liste des fromages s’il y a un fromage à la position pos.
         @return true s'il y a un fromage à la position pos, false sinon. */
-    private boolean fromageIci(Point pos) {
-        return false;
+    private boolean fromageIci(Point pos, List<Point> fromages) {
+        return fromages.contains(pos);
     }
 
     /* Regarde de manière performante (accès en ordre constant) s’il y a un fromage à la position pos.
         @return true s'il y a un fromage à la position pos, false sinon. */
     private boolean fromageIci_EnOrdreConstant(Point pos) {
-        return false;
+        return currentFromages.contains(pos);
     }
 
     /* Indique si le joueur peut passer de la position (du Point) « de » au point « a ».
