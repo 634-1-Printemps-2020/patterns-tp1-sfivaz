@@ -14,6 +14,11 @@ public class PyRat {
         populatePathes(laby);
     }
 
+    /**
+     * Remplit la liste unique des points atteignables dans une labyrinthe
+     *
+     * @param laby - le labyrinthe
+     */
     private void populatePathes(Map<Point, List<Point>> laby) {
         for (Point from : laby.keySet())
             for (Point to : laby.keySet())
@@ -51,6 +56,15 @@ public class PyRat {
         return currentFromages.contains(pos);
     }
 
+    /**
+     * Parcous tous les points atteignables du labyrinthe jusqu'à ce qu'il le point voulu à partir d'une position source donnée
+     *
+     * @param laby    - le labyrinthe
+     * @param source  - le point source
+     * @param to      - le point voulu
+     * @param visited - une liste avec tous les points déjà visités
+     * @return true s'il trouve le point voulu, ou false s'il ne le trouve pas
+     */
     private boolean innerPassagePossible(Map<Point, List<Point>> laby, Point source, Point to, Set<Point> visited) {
         for (Point point : laby.get(source)) {
             if (!visited.contains(point)) {
@@ -78,11 +92,18 @@ public class PyRat {
         return pathes.contains(new Path(de, a)) || pathes.contains(new Path(a, de));
     }
 
-    private void innerPointsInatteignables(Map<Point, List<Point>> laby, Point pos, Set<Point> visited) {
-        for (Point point : laby.get(pos)) {
+    /**
+     * Cette fonction parcours tous les points atteignables du labyrinthe
+     *
+     * @param laby    - le labyrinthe
+     * @param source  - le point source
+     * @param visited - une liste des points déjà visités
+     */
+    private void parcousAtteignables(Map<Point, List<Point>> laby, Point source, Set<Point> visited) {
+        for (Point point : laby.get(source)) {
             if (!visited.contains(point)) {
                 visited.add(point);
-                innerPointsInatteignables(laby, point, visited);
+                parcousAtteignables(laby, point, visited);
             }
         }
     }
@@ -93,7 +114,7 @@ public class PyRat {
         HashSet<Point> visited = new HashSet<>();
         Set<Point> points = laby.keySet();
 
-        innerPointsInatteignables(laby, pos, visited);
+        parcousAtteignables(laby, pos, visited);
 
         points.removeAll(visited);
         return points;
