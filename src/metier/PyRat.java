@@ -6,12 +6,14 @@ public class PyRat {
 
     private Set<Point> currentFromages;
     private Set<Path> pathes;
+    private Map<Point, List<Point>> myLaby;
 
     /* Méthode appelée une seule fois permettant d'effectuer des traitements "lourds" afin d'augmenter la performace de la méthode turn. */
     public void preprocessing(Map<Point, List<Point>> laby, int labyWidth, int labyHeight, Point position, List<Point> fromages) {
         currentFromages = new HashSet<>(fromages);
         pathes = new HashSet<>();
         populatePathes(laby);
+        myLaby = laby;
     }
 
     /**
@@ -81,7 +83,8 @@ public class PyRat {
     /* Indique si le joueur peut passer de la position (du Point) « de » au point « a ».
         @return true s'il y a un passage depuis  « de » vers « a ». */
     private boolean passagePossible(Map<Point, List<Point>> laby, Point de, Point a) {
-        return innerPassagePossible(laby, de, a, new HashSet<>());
+        return laby.get(de) != null && laby.get(de).contains(a);
+//        return innerPassagePossible(laby, de, a, new HashSet<>());
     }
 
     /* Indique si le joueur peut passer de la position (du Point) « de » au point « a »,
@@ -108,15 +111,33 @@ public class PyRat {
         }
     }
 
+//    private void parcousRecursif(Point pos, List<Point> chemin) {
+//        chemin.add(pos);
+//        for (Point voisin : myLaby.get(pos)) {
+//            if (!chemin.contains(pos)) {
+//                parcousRecursif(voisin, chemin);
+//            }
+//        }
+//    }
+
     /* Retourne la liste des points qui ne peuvent pas être atteints depuis la position « pos ».
         @return la liste des points qui ne peuvent pas être atteints depuis la position « pos ». */
-    private Set<Point> pointsInatteignables(Map<Point, List<Point>> laby, Point pos) {
+    private List<Point> pointsInatteignables(Map<Point, List<Point>> laby, Point pos) {
+
+//        List<Point> inatteignable = new ArrayList<>();
+//        List<Point> chemin = new ArrayList<>();
+//        parcousRecursif(pos, chemin);
+//        for (Point p : myLaby.keySet())
+//            if (!chemin.contains(p))
+//                inatteignable.add(p);
+//        return inatteignable;
+
         HashSet<Point> visited = new HashSet<>();
         Set<Point> points = laby.keySet();
 
         parcousAtteignables(laby, pos, visited);
 
         points.removeAll(visited);
-        return points;
+        return (List<Point>) points;
     }
 }
