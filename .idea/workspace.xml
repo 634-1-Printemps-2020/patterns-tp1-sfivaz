@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/metier/Path.java" afterDir="false" />
+    <list default="true" id="b852990a-f2d1-44a1-be40-c4708cd82283" name="Default" comment="j'ai commenté les fonctions crées">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/metier/PyRat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/metier/PyRat.java" afterDir="false" />
     </list>
@@ -20,8 +19,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="77" lean-forward="true" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
+            <state relative-caret-position="255">
+              <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -29,13 +28,32 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/metier/PyRat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+            <state relative-caret-position="544">
+              <caret line="49" column="23" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="23" />
               <folding>
-                <element signature="e#2089#2090#0" expanded="true" />
-                <element signature="e#2134#2135#0" expanded="true" />
-                <element signature="e#2374#2375#0" expanded="true" />
-                <element signature="e#2426#2427#0" expanded="true" />
+                <element signature="n#!!doc;n#preprocessing#0;n#PyRat#0" />
+                <element signature="docComment;method#populatePathes#0;class#PyRat#0" />
+                <element signature="method#populatePathes#0;class#PyRat#0" />
+                <element signature="e#821#920#0" />
+                <element signature="n#!!doc;n#turn#0;n#PyRat#0" />
+                <element signature="n#!!doc;n#fromageIci#0;n#PyRat#0" />
+                <element signature="e#2892#2893#0" expanded="true" />
+                <element signature="e#2937#2938#0" expanded="true" />
+                <element signature="n#!!doc;n#fromageIci_EnOrdreConstant#0;n#PyRat#0" />
+                <element signature="docComment;method#innerPassagePossible#0;class#PyRat#0" />
+                <element signature="method#innerPassagePossible#0;class#PyRat#0" />
+                <element signature="e#3809#4091#1" />
+                <element signature="e#3853#4081#1" />
+                <element signature="n#!!doc;n#passagePossible#0;n#PyRat#0" />
+                <element signature="method#passagePossible#0;class#PyRat#0" />
+                <element signature="n#!!doc;n#passagePossible_EnOrdreConstant#0;n#PyRat#0" />
+                <element signature="method#passagePossible_EnOrdreConstant#0;class#PyRat#0" />
+                <element signature="docComment;method#parcousAtteignables#0;class#PyRat#0" />
+                <element signature="method#parcousAtteignables#0;class#PyRat#0" />
+                <element signature="e#5354#5518#1" />
+                <element signature="e#5398#5508#1" />
+                <element signature="n#!!doc;n#pointsInatteignables#0;n#PyRat#0" />
+                <element signature="method#pointsInatteignables#0;class#PyRat#0" />
               </folding>
             </state>
           </provider>
@@ -44,17 +62,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/metier/Path.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="391">
+              <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
               <folding>
-                <element signature="e#207#208#0" expanded="true" />
                 <element signature="e#234#235#0" expanded="true" />
-                <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
-                <element signature="e#333#334#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#421#422#0" expanded="true" />
+                <element signature="e#261#262#0" expanded="true" />
                 <element signature="e#778#779#0" expanded="true" />
                 <element signature="e#823#824#0" expanded="true" />
               </folding>
@@ -66,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/metier/Point.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
-              <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding>
                 <element signature="e#424#425#0" expanded="true" />
                 <element signature="e#465#466#0" expanded="true" />
@@ -115,7 +127,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,6 +150,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,28 +255,44 @@
       <workItem from="1579190378689" duration="95000" />
       <workItem from="1579190584833" duration="16000" />
       <workItem from="1582212614646" duration="1588000" />
-      <workItem from="1582306370380" duration="6943000" />
+      <workItem from="1582306370380" duration="7394000" />
+      <workItem from="1582809791155" duration="539000" />
     </task>
+    <task id="LOCAL-00001" summary="done">
+      <created>1582313359623</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582313359623</updated>
+    </task>
+    <task id="LOCAL-00002" summary="j'ai commenté les fonctions crées">
+      <created>1582313749138</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1582313749138</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16255000" />
+    <option name="totallyTimeSpent" value="17245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="simpleUML" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="simpleUML" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24160346" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.24160346" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -275,7 +303,6 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32936078" />
-      <window_info anchor="right" id="PlantUML" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -285,22 +312,19 @@
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="PlantUML" order="9" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="done" />
+    <MESSAGE value="j'ai commenté les fonctions crées" />
+    <option name="LAST_COMMIT_MESSAGE" value="j'ai commenté les fonctions crées" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/metier/DijkstraSolver.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" column="77" lean-forward="true" selection-start-line="17" selection-start-column="77" selection-end-line="17" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/metier/DijkstraSolver.java" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.3/lib/src.zip!/java.base/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -308,10 +332,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/metier/Path.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="31" column="37" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
+          <folding>
+            <element signature="e#234#235#0" expanded="true" />
+            <element signature="e#261#262#0" expanded="true" />
+            <element signature="e#778#779#0" expanded="true" />
+            <element signature="e#823#824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/metier/Point.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="24" column="13" lean-forward="true" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
           <folding>
             <element signature="e#424#425#0" expanded="true" />
             <element signature="e#465#466#0" expanded="true" />
@@ -319,34 +356,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/metier/Path.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding>
-            <element signature="e#207#208#0" expanded="true" />
-            <element signature="e#234#235#0" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#333#334#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#421#422#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="255">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/metier/PyRat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="86" column="9" selection-start-line="86" selection-start-column="9" selection-end-line="86" selection-end-column="9" />
+        <state relative-caret-position="544">
+          <caret line="49" column="23" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="23" />
           <folding>
-            <element signature="e#2089#2090#0" expanded="true" />
-            <element signature="e#2134#2135#0" expanded="true" />
-            <element signature="e#2374#2375#0" expanded="true" />
-            <element signature="e#2426#2427#0" expanded="true" />
+            <element signature="n#!!doc;n#preprocessing#0;n#PyRat#0" />
+            <element signature="docComment;method#populatePathes#0;class#PyRat#0" />
+            <element signature="method#populatePathes#0;class#PyRat#0" />
+            <element signature="e#821#920#0" />
+            <element signature="n#!!doc;n#turn#0;n#PyRat#0" />
+            <element signature="n#!!doc;n#fromageIci#0;n#PyRat#0" />
+            <element signature="e#2892#2893#0" expanded="true" />
+            <element signature="e#2937#2938#0" expanded="true" />
+            <element signature="n#!!doc;n#fromageIci_EnOrdreConstant#0;n#PyRat#0" />
+            <element signature="docComment;method#innerPassagePossible#0;class#PyRat#0" />
+            <element signature="method#innerPassagePossible#0;class#PyRat#0" />
+            <element signature="e#3809#4091#1" />
+            <element signature="e#3853#4081#1" />
+            <element signature="n#!!doc;n#passagePossible#0;n#PyRat#0" />
+            <element signature="method#passagePossible#0;class#PyRat#0" />
+            <element signature="n#!!doc;n#passagePossible_EnOrdreConstant#0;n#PyRat#0" />
+            <element signature="method#passagePossible_EnOrdreConstant#0;class#PyRat#0" />
+            <element signature="docComment;method#parcousAtteignables#0;class#PyRat#0" />
+            <element signature="method#parcousAtteignables#0;class#PyRat#0" />
+            <element signature="e#5354#5518#1" />
+            <element signature="e#5398#5508#1" />
+            <element signature="n#!!doc;n#pointsInatteignables#0;n#PyRat#0" />
+            <element signature="method#pointsInatteignables#0;class#PyRat#0" />
           </folding>
         </state>
       </provider>
